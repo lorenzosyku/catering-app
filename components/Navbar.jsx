@@ -11,7 +11,7 @@ function Header() {
           <div className="flex justify-center items-center">
             <div className="flex-shrink-0">
               <h2 className="font-poppins text-xl text-shade-lightblue italic font-semibold">
-                TeztNet<span className="text-amber-400">-V1</span>
+                <span className="text-amber-400">Sandro's Catering</span>
               </h2>
               <h4 className="italic font-poppins font-semibold text-xs">
                 Beta Version
@@ -23,10 +23,10 @@ function Header() {
                   <li className="cursor-pointer">Home</li>
                 </div>
                 <div className=" hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
-                  <li className="cursor-pointer">Markets</li>
+                  <li className="cursor-pointer">Services</li>
                 </div>
                 <div className=" hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
-                  <li className="cursor-pointer">Services</li>
+                  <li className="cursor-pointer">About Us</li>
                 </div>
 
                 <div className=" hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
@@ -36,7 +36,7 @@ function Header() {
             </div>
           </div>
           <div className="hidden md:flex">
-            <button className="cursor-pointer font-semibold bg-shade-lightblue px-3 mx-5 py-1 text-white hover:bg-shade-darkgrayblue rounded-md">
+            <button className="cursor-pointer font-semibold bg-shade-lightblue px-3 mx-5 py-1 bg-cyan-600 text-gray-100 hover:bg-cyan-700 rounded-md">
               Login
             </button>
           </div>
@@ -50,9 +50,9 @@ function Header() {
             >
               <span className="sr-only">Open main menu</span>
               {!isOpen ? (
-                <MenuIcon className="h-5 w-5 " />
+                <MenuIcon className="h-5 w-5 text-gray-800" />
               ) : (
-                <XIcon className="h-5 w-5 " />
+                <XIcon className="h-5 w-5 text-gray-800" />
               )}
             </button>
           </div>
@@ -78,12 +78,12 @@ function Header() {
               </div>
               <div>
                 <li className="cursor-pointer hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
-                  Markets
+                  Services
                 </li>
               </div>
               <div>
                 <li className="cursor-pointer hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
-                  Services
+                  About Us
                 </li>
               </div>
 
@@ -94,7 +94,7 @@ function Header() {
               </div>
 
               <div className="">
-                <button className="cursor-pointer font-semibold bg-shade-lightblue px-3 mx-3 py-1 my-4 text-white hover:bg-blue-400 rounded-sm">
+                <button className="cursor-pointer font-semibold bg-shade-lightblue px-3 mx-3 py-1 my-4 text-white bg-blue-400 hover:bg-blue-400 rounded-sm">
                   Login
                 </button>
               </div>
