@@ -11,7 +11,7 @@ function Header() {
           <div className="flex justify-center items-center">
             <div className="flex-shrink-0">
               <h2 className="font-poppins text-xl text-shade-lightblue italic font-semibold">
-                <span className="text-amber-400">Sandro's Catering</span>
+                <span className="text-amber-400">Lovely & Italian</span>
               </h2>
               <h4 className="italic font-poppins font-semibold text-xs">
                 Beta Version
@@ -20,7 +20,7 @@ function Header() {
             <div className="hidden md:block">
               <ul className="ml-10 flex items-baseline space-x-4">
                 <div className=" hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
-                  <li className="cursor-pointer">Home</li>
+                  <li className="cursor-pointer">Menus</li>
                 </div>
                 <div className=" hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
                   <li className="cursor-pointer">Services</li>
@@ -30,7 +30,7 @@ function Header() {
                 </div>
 
                 <div className=" hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
-                  <li className="cursor-pointer">Contact Us</li>
+                  <li className="cursor-pointer">Our Partners</li>
                 </div>
               </ul>
             </div>
@@ -73,7 +73,7 @@ function Header() {
             <ul refer={refer} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <div>
                 <li className="hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                  Home
+                  Menus
                 </li>
               </div>
               <div>
@@ -89,7 +89,7 @@ function Header() {
 
               <div>
                 <li className="cursor-pointer hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
-                  Contact Us
+                  Our Partners
                 </li>
               </div>
 
