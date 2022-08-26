@@ -4,7 +4,13 @@ import React from "react";
 function AboutUs() {
   return (
     <div className="w-full flex items-center justify-center h-screen relative ">
-      <div className="my-6  text-center">
+      <Image
+        className=""
+        src={"/beizh-bg.png"}
+        layout="fill"
+        objectFit="cover"
+      />
+      <div className="absolute my-6 text-center">
         <p className="max-w-4xl italic text-2xl ">
           Sandro’s approach to cooking could be described as simultaneously
           elegant and rustic, comforting yet refined. He combines locally grown
