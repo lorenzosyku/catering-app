@@ -7,7 +7,7 @@ import Banner from "../components/Banner";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import Menus from "../components/Menus";
-//import AboutUs from "../components/AboutUs"
+import AboutUs from "../components/AboutUs"
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <main className="flex w-full flex-1 flex-col items-center justify-center text-center">
         <Banner />
         <Testimonials />
-        {/* <AboutUs /> */}
+        <AboutUs />
         <Menus />
         <Services />
       </main>
