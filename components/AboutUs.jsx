@@ -10,7 +10,7 @@ function AboutUs() {
         layout="fill"
         objectFit="cover"
       />
-      <div className="absolute my-6 text-center">
+      <div className="absolute my-6 text-center p-5">
         <p className="max-w-4xl italic text-2xl ">
           Sandro’s approach to cooking could be described as simultaneously
           elegant and rustic, comforting yet refined. He combines locally grown
