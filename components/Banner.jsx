@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 function Banner() {
+  const router = useRouter();
   return (
     <div className="w-full h-screen relative">
       <Image
@@ -16,8 +18,11 @@ function Banner() {
         </h1>
 
         <p className="mt-3 text-2xl">Get started by specifying your event </p>
-        <button className="text-cyan-600 bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 cursor-pointer hover:shadow-xl active:scale-90 transition duration-150">
-          Get Started
+        <button
+          onClick={() => router.push("/Register")}
+          className="text-cyan-600 bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 cursor-pointer hover:shadow-xl active:scale-90 transition duration-150"
+        >
+          Book Your Event
         </button>
       </div>
     </div>
