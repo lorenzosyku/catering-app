@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 function Header() {
   const router = useRouter();
   const routerMenus = useRouter();
+  const routerPartners = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="fixed bg-white w-full z-20 shadow-md">
@@ -22,14 +23,17 @@ function Header() {
             </div>
             <div className="hidden md:block">
               <ul className="ml-10 flex items-baseline space-x-4">
-                <div onClick={() => routerMenus.push('/Menus')} className=" hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
+                <div
+                  onClick={() => routerMenus.push("/Menus")}
+                  className=" hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+                >
                   <li className="cursor-pointer">Menus</li>
                 </div>
                 <div className=" hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
                   <li className="cursor-pointer">Services</li>
                 </div>
 
-                <div className=" hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
+                <div onClick={() => routerPartners.push("/partners")} className=" hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
                   <li className="cursor-pointer">Our Partners</li>
                 </div>
               </ul>
@@ -74,7 +78,7 @@ function Header() {
         {(refer) => (
           <div className="md:hidden" id="mobile-menu">
             <ul refer={refer} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <div onClick={() => routerMenus.push('/Menus')}>
+              <div onClick={() => routerMenus.push("/Menus")}>
                 <li className="hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Menus
                 </li>
@@ -85,7 +89,7 @@ function Header() {
                 </li>
               </div>
 
-              <div>
+              <div onClick={() => routerPartners.push("/partners")}>
                 <li className="cursor-pointer hover:bg-gray-300 px-3 py-2 rounded-md text-sm font-medium">
                   Our Partners
                 </li>
