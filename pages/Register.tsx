@@ -1,11 +1,14 @@
+import { useRouter } from "next/router";
 import React from "react";
 
 function Register() {
+
+  const router = useRouter()
   return (
     <div className="min-h-screen ">
       <div className="flex justify-center items-center">
         <form className="md:flex flex-col shadow-lg rounded-md py-5 md:w-1/4">
-          <div className="bg-shade-lightblue h-[60px]">
+          <div className="bg-cyan-600 h-[60px]">
             <h2 className="p-3 text-xl font-semibold text-gray-100">
               Register
             </h2>
@@ -43,14 +46,14 @@ function Register() {
               Have an account??
               <span
                 className="text-blue-500 px-1 cursor-pointer hover:underline"
-                onClick={() => {}}
+                onClick={() => router.replace('/login')}
               >
                 Login
               </span>
             </p>
           </div>
           <div className="flex justify-end p-5">
-            <button className="bg-shade-lightblue text-gray-100 font-semibold p-2 shadow-lg rounded-md cursor-pointer">
+            <button className="bg-cyan-600 text-gray-100 font-semibold p-2 shadow-lg rounded-md cursor-pointer">
               Register
             </button>
           </div>

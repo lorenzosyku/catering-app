@@ -1,8 +1,10 @@
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
+import { useRouter } from "next/router";
 
 function Header() {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="fixed bg-white w-full z-20 shadow-md">
@@ -36,7 +38,10 @@ function Header() {
             </div>
           </div>
           <div className="hidden md:flex">
-            <button className="cursor-pointer font-semibold bg-shade-lightblue px-3 mx-5 py-1 bg-cyan-600 text-gray-100 hover:bg-cyan-700 rounded-md">
+            <button
+              onClick={() => router.push("/login")}
+              className="cursor-pointer font-semibold bg-shade-lightblue px-3 mx-5 py-1 bg-cyan-600 text-gray-100 hover:bg-cyan-700 rounded-md"
+            >
               Login
             </button>
           </div>
@@ -94,7 +99,10 @@ function Header() {
               </div>
 
               <div className="">
-                <button className="cursor-pointer font-semibold bg-shade-lightblue px-3 mx-3 py-1 my-4 text-white bg-blue-400 hover:bg-blue-400 rounded-sm">
+                <button
+                  onClick={() => router.push("/login")}
+                  className="cursor-pointer font-semibold bg-shade-lightblue px-3 mx-3 py-1 my-4 text-white bg-blue-400 hover:bg-blue-400 rounded-sm"
+                >
                   Login
                 </button>
               </div>
