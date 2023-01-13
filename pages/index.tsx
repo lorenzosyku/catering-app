@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
-import Menus from "../components/Menus";
+import Menus from "./Menus";
 import AboutUs from "../components/AboutUs"
 
 const Home: NextPage = () => {
