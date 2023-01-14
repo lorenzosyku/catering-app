@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
-import Menus from "./Menus";
+import Form from "../components/Form";
 import AboutUs from "../components/AboutUs"
 
 const Home: NextPage = () => {
@@ -22,6 +22,7 @@ const Home: NextPage = () => {
         <Testimonials />
         <AboutUs />
         <Services />
+        <Form />
       </main>
 
       <Footer />
