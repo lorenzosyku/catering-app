@@ -11,8 +11,8 @@ function Form() {
         layout="fill"
         objectFit="cover"
       />
-      <div className="absolute w-full text-center">
-        <div className="max-w-3xl mx-auto p-5 m-5 text-gray-800" id="contact">
+      <div className="absolute w-full text-center ">
+        <div className="max-w-3xl mx-auto p-5 m-5 bg-white text-gray-800 flex flex-col justify-center" id="contact">
           <div className="mb-5">
             <div>
               <p className="font-semibold text-2xl">GET IN TOUCH</p>
@@ -24,10 +24,10 @@ function Form() {
             </h2>
           </div>
 
-          <div className="sm:flex flex-grow">
+          <div className="sm:flex flex-grow justify-center">
             <div>
               <form
-                className="flex flex-col max-w-2xl mx-auto mb-10"
+                className="flex flex-col max-w-2xl mx-auto mb-10 justify-center"
                 //onSubmit={submitForm}
               >
                 <fieldset>
